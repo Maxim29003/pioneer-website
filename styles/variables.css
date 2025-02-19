@@ -1,0 +1,10 @@
+:root {
+    --accent-color: #607CE6;
+    --dark-color: #333;
+    --light-color: #fff;
+    --gray-color: #888;
+    --light-gray-color: #F5F5F5;
+    --third-color: #D9D9D9;
+
+    --font-family: 'Source Sans 3', sans-serif;
+}
