@@ -207,6 +207,13 @@
   background-size: contain;
 }
 
+.representative-offices__map {
+  max-inline-size: 1151.89px;
+  max-block-size: 678.84px;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
 @media (width<=1220px) {
   .header__container {
     padding-inline: 16px;
