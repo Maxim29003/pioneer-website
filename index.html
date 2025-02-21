@@ -12,7 +12,7 @@
   <body class="page">
     <header class="header">
       <div class="header__container">
-        <a class="header__logo" href="#">
+        <a class="logo-action header__logo" href="#">
           <svg
             width="180"
             height="38"
@@ -33,56 +33,60 @@
             <span class="header__contacts-item-label"
               >По вопросам и предложениям</span
             >
-            <a class="header__contacts-item-link" href="mailto:pionerrr@sila.ru"
+            <a
+              class="header__contacts-item-link contact-link"
+              href="mailto:pionerrr@sila.ru"
               >pionerrr@sila.ru</a
             >
           </li>
           <li class="header__contacts-item">
             <span class="header__contacts-item-label">Для консультаций</span>
-            <a class="header__contacts-item-link" href="tel:+74954562421"
+            <a
+              class="header__contacts-item-link contact-link"
+              href="tel:+74954562421"
               >+7 (495) 456-24-21</a
             >
           </li>
         </ul>
 
-        <div class="header__burger-menu">
+        <button class="button header__burger-menu" aria-label="Открыть меню">
           <img
             class="header__burger-menu-icon"
             src="./svg/burger-menu.svg"
             alt=""
           />
-        </div>
+        </button>
       </div>
       <div class="header__nav">
         <nav class="header__nav-container">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Главная</a>
+              <a class="nav-link" href="">Главная</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">О предприятии</a>
+              <a class="nav-link" href="">О предприятии</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Новости</a>
+              <a class="nav-link" href="">Новости</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Продукция</a>
+              <a class="nav-link" href="">Продукция</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Услуги</a>
+              <a class="nav-link" href="">Услуги</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Поддержка</a>
+              <a class="nav-link" href="">Поддержка</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">География поставок</a>
+              <a class="nav-link" href="">География поставок</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">Контакты</a>
+              <a class="nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a class="header__nav-link" href="">
+        <a class="header__nav-link contact-link" href="">
           <img class="header__nav-link-icon" src="./svg/phone.svg" alt="" />
           <span class="header__nav-link-text">Перезвоните мне</span>
         </a>
@@ -152,109 +156,121 @@
         <h2 class="section-title">Продукция</h2>
         <ul class="products-list">
           <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/level_indicator.png"
-                alt="Сигнализатор уровня"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  Сигнализатор уровня
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/level_indicator.png"
+                  alt="Сигнализатор уровня"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    Сигнализатор уровня
+                  </h3>
+                  <span class="products-list__item-content-more"
+                    >Подробнее</span
+                  >
+                </div>
+              </article>
+            </a>
           </li>
           <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/pressure_sensor.png"
-                alt="Датчики давления"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  Датчики давления
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/pressure_sensor.png"
+                  alt="Датчики давления"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    Датчики давления
+                  </h3>
+                  <span class="products-list__item-content-more"
+                    >Подробнее</span
+                  >
+                </div>
+              </article>
+            </a>
           </li>
           <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/PID_controllers.png"
-                alt="ПИД-регуляторы"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  ПИД-регуляторы
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
-          </li>
-
-          <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/pressure_calibrator.png"
-                alt="Калибратор давления"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  Калибратор давления
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/PID_controllers.png"
+                  alt="ПИД-регуляторы"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    ПИД-регуляторы
+                  </h3>
+                  <sapn class="products-list__item-content-more"
+                    >Подробнее</sapn
+                  >
+                </div>
+              </article>
+            </a>
           </li>
 
           <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/Gas_flow_corrector.png"
-                alt="Корректор расхода газа"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  Корректор расхода газа
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/pressure_calibrator.png"
+                  alt="Калибратор давления"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    Калибратор давления
+                  </h3>
+                  <span class="products-list__item-content-more"
+                    >Подробнее</span
+                  >
+                </div>
+              </article>
+            </a>
           </li>
 
           <li class="products-list__item">
-            <article class="products-list__item-content">
-              <img
-                src="./images/Pressure_gauges.png"
-                alt="Калибратор давления"
-                class="products-list__item-content-image"
-              />
-              <div class="products-list__item-content-wrapper">
-                <h3 class="products-list__item-content-title">
-                  Калибратор давления
-                </h3>
-                <a href="#" class="products-list__item-content-link"
-                  >Подробнее</a
-                >
-              </div>
-            </article>
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/Gas_flow_corrector.png"
+                  alt="Корректор расхода газа"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    Корректор расхода газа
+                  </h3>
+                  <span class="products-list__item-content-more"
+                    >Подробнее</span
+                  >
+                </div>
+              </article>
+            </a>
+          </li>
+
+          <li class="products-list__item">
+            <a class="card-link products-list__item-link" href="#">
+              <article class="products-list__item-content">
+                <img
+                  src="./images/Pressure_gauges.png"
+                  alt="Калибратор давления"
+                  class="products-list__item-content-image"
+                />
+                <div class="products-list__item-content-wrapper">
+                  <h3 class="products-list__item-content-title">
+                    Калибратор давления
+                  </h3>
+                  <span class="products-list__item-content-more"
+                    >Подробнее</span
+                  >
+                </div>
+              </article>
+            </a>
           </li>
         </ul>
       </section>
@@ -724,57 +740,69 @@
         <h2 class="section-title">Новости</h2>
         <ul class="news__list">
           <li class="news__item">
-            <article class="news__article">
-              <img class="news__image" src="./images/programmer.jpg" alt="" />
-              <div class="news__content">
-                <p class="news__text">
-                  НПП «ПИОНЕР» подтвердило свои компетенции в области
-                  консультирования и изготовления…
-                </p>
-                <div class="news__footer">
-                  <a class="news__link" href="#">Читать далее</a>
-                  <span class="news__date">20.07.2020</span>
+            <a href="#" class="card-link news__item-link">
+              <article class="news__article">
+                <img class="news__image" src="./images/programmer.jpg" alt="" />
+                <div class="news__content">
+                  <p class="news__text">
+                    НПП «ПИОНЕР» подтвердило свои компетенции в области
+                    консультирования и изготовления…
+                  </p>
+                  <div class="news__footer">
+                    <span class="news__more">Читать далее</span>
+                    <span class="news__date">
+                      <time datetime="2020-07-20">20.07.2020</time></span
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </a>
           </li>
 
           <li class="news__item">
-            <article class="news__article">
-              <img class="news__image" src="./images/drill.jpg" alt="" />
-              <div class="news__content">
-                <p class="news__text">
-                  Поздравляем коллектив регионального представительства «ПИОНЕР»
-                  с праздником!
-                </p>
-                <div class="news__footer">
-                  <a class="news__link" href="#">Читать далее</a>
-                  <span class="news__date">20.07.2020</span>
+            <a href="#" class="card-link news__item-link">
+              <article class="news__article">
+                <img class="news__image" src="./images/drill.jpg" alt="" />
+                <div class="news__content">
+                  <p class="news__text">
+                    Поздравляем коллектив регионального представительства
+                    «ПИОНЕР» с праздником!
+                  </p>
+                  <div class="news__footer">
+                    <span class="news__more">Читать далее</span>
+                    <span class="news__date">
+                      <time datetime="2020-07-20">20.07.2020</time></span
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </a>
           </li>
 
           <li class="news__item">
-            <article class="news__article">
-              <img class="news__image" src="./images/turner.jpg" alt="" />
-              <div class="news__content">
-                <p class="news__text">
-                  Перенос сроков проведения запланированных работ в 2020 году
-                </p>
-                <div class="news__footer">
-                  <a class="news__link" href="#">Читать далее</a>
-                  <span class="news__date">20.07.2020</span>
+            <a href="#" class="card-link news__item-link">
+              <article class="news__article">
+                <img class="news__image" src="./images/turner.jpg" alt="" />
+                <div class="news__content">
+                  <p class="news__text">
+                    Перенос сроков проведения запланированных работ в 2020 году
+                  </p>
+                  <div class="news__footer">
+                    <span class="news__more">Читать далее</span>
+                    <span class="news__date">
+                      <time datetime="2020-07-20">20.07.2020</time></span
+                    >
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a href="#" class="footer__logo"
+        <a href="#" class="footer__logo logo-action"
           ><svg
             width="180"
             height="38"
@@ -789,50 +817,48 @@
               fill="white"
             /></svg
         ></a>
-        <button class="footer__nav-button">Навигация</button>
+        <button class="button footer__nav-button">Навигация</button>
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Главная</a>
+              <a class="nav-link" href="#">Главная</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">О предприятии</a>
+              <a class="nav-link" href="#">О предприятии</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Новости</a>
+              <a class="nav-link" href="#">Новости</a>
             </li>
 
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Продукция</a>
+              <a class="nav-link" href="#">Продукция</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Услуги</a>
+              <a class="nav-link" href="#">Услуги</a>
             </li>
           </ul>
 
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Поддержка</a>
+              <a class="nav-link" href="#">Поддержка</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">География поставок</a>
+              <a class="nav-link" href="#">География поставок</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#">Контакты</a>
             </li>
           </ul>
 
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Файлы</a>
+              <a class="nav-link" href="#">Файлы</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Поддержка</a>
+              <a class="nav-link" href="#">Поддержка</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#"
-                >Политика конфеденциальности</a
-              >
+              <a class="nav-link" href="#">Политика конфеденциальности</a>
             </li>
           </ul>
         </nav>
