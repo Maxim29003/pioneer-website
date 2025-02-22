@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Российский завод силовых машин" />
+    <meta name="author" content="Пионер" />
+    <meta
+      name="keywords"
+      content="Пионер, завод, силовые машины, производство, продукция, услуги, контакты, новости, представительства"
+    />
     <title>Пионер</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -10,9 +16,13 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header" aria-label="Шапка сайта">
       <div class="header__container">
-        <a class="logo-action header__logo" href="#">
+        <a
+          class="logo-action header__logo"
+          href="#"
+          aria-label="Перейти на главную страницу"
+        >
           <svg
             width="180"
             height="38"
@@ -28,7 +38,7 @@
             />
           </svg>
         </a>
-        <ul class="header__contacts">
+        <ul class="header__contacts" aria-label="Контакты предприятия">
           <li class="header__contacts-item">
             <span class="header__contacts-item-label"
               >По вопросам и предложениям</span
@@ -36,6 +46,7 @@
             <a
               class="header__contacts-item-link contact-link"
               href="mailto:pionerrr@sila.ru"
+              aria-label="Электронная почта предприятия"
               >pionerrr@sila.ru</a
             >
           </li>
@@ -44,12 +55,16 @@
             <a
               class="header__contacts-item-link contact-link"
               href="tel:+74954562421"
+              aria-label="Телефон предприятия"
               >+7 (495) 456-24-21</a
             >
           </li>
         </ul>
 
-        <button class="button header__burger-menu" aria-label="Открыть меню">
+        <button
+          class="button header__burger-menu"
+          aria-label="Открыть меню навигации"
+        >
           <img
             class="header__burger-menu-icon"
             src="./svg/burger-menu.svg"
@@ -58,41 +73,85 @@
         </button>
       </div>
       <div class="header__nav">
-        <nav class="header__nav-container">
+        <nav class="header__nav-container" aria-label="Навигация по сайту">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="nav-link" href="">Главная</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на главную страницу"
+                >Главная</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">О предприятии</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'О предприятии'"
+                >О предприятии</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">Новости</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'Новости'"
+                >Новости</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">Продукция</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'Продукция'"
+                >Продукция</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">Услуги</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'Услуги'"
+                >Услуги</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">Поддержка</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'Поддержка'"
+                >Поддержка</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">География поставок</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'География поставок'"
+                >География поставок</a
+              >
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="">Контакты</a>
+              <a
+                class="nav-link"
+                href=""
+                aria-label="Перейти на страницу 'Контакты'"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
-        <a class="header__nav-link contact-link" href="">
+        <a
+          class="header__nav-link contact-link"
+          href=""
+          aria-label="Перезвоните мне"
+        >
           <img class="header__nav-link-icon" src="./svg/phone.svg" alt="" />
           <span class="header__nav-link-text">Перезвоните мне</span>
         </a>
       </div>
     </header>
-    <main class="main">
+    <main class="main" aria-label="Основной контент">
       <section class="main__section">
         <div class="main__section-container">
           <h1 class="main__section-title">Российский завод силовых машин</h1>
@@ -101,7 +160,11 @@
             производством силовых машин.</span
           >
         </div>
-        <img class="main__section-image" src="./images/hero-image.jpg" alt="" />
+        <img
+          class="main__section-image"
+          src="./images/hero-image.jpg"
+          alt="Российский завод силовых машин"
+        />
       </section>
       <section class="about-company">
         <h2 class="section-title">О предприятии</h2>
@@ -127,7 +190,7 @@
               <img
                 class="about-company__item-content-image"
                 src="./images/welder.jpg"
-                alt=""
+                alt="Производственный процесс сварки"
               />
             </article>
           </li>
@@ -146,7 +209,7 @@
               <img
                 class="about-company__item-content-image"
                 src="./images/assembly_line.jpg"
-                alt=""
+                alt="Производственный процесс сборки"
               />
             </article>
           </li>
@@ -154,9 +217,13 @@
       </section>
       <section>
         <h2 class="section-title">Продукция</h2>
-        <ul class="products-list">
+        <ul class="products-list" aria-label="Список продукции">
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'Сигнализатор уровня'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/level_indicator.png"
@@ -175,7 +242,11 @@
             </a>
           </li>
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'Датчики давления'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/pressure_sensor.png"
@@ -194,7 +265,11 @@
             </a>
           </li>
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'ПИД-регуляторы'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/PID_controllers.png"
@@ -214,7 +289,11 @@
           </li>
 
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'Калибратор давления'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/pressure_calibrator.png"
@@ -234,7 +313,11 @@
           </li>
 
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'Корректор расхода газа'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/Gas_flow_corrector.png"
@@ -254,7 +337,11 @@
           </li>
 
           <li class="products-list__item">
-            <a class="card-link products-list__item-link" href="#">
+            <a
+              class="card-link products-list__item-link"
+              href="#"
+              aria-label="Перейти на страницу 'Манометры'"
+            >
               <article class="products-list__item-content">
                 <img
                   src="./images/Pressure_gauges.png"
@@ -283,6 +370,8 @@
           viewBox="0 0 1153 680"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Карта расположения представительств"
         >
           <path
             d="M68.4436 479.983C67.943 479.411 67.1564 475.406 66.7273 471.116C66.2982 466.755 65.583 462.966 65.2255 462.608C64.7964 462.251 62.937 461.393 61.0776 460.678C58.217 459.677 57.1442 458.676 55.0703 455.458C52.7103 451.74 52.6388 451.382 53.4255 448.737C53.8545 447.235 54.6412 445.806 55.1418 445.663C56.5721 445.091 61.7927 447.307 65.3685 449.953C67.5855 451.669 69.4448 452.526 71.0182 452.526C72.9491 452.526 73.8073 453.099 75.8812 455.601C78.2412 458.461 78.4558 459.105 78.4558 463.323C78.3842 470.187 77.5261 472.904 74.0933 476.765C70.3745 480.912 69.5164 481.341 68.4436 479.983Z"
@@ -738,11 +827,15 @@
       </section>
       <section class="news">
         <h2 class="section-title">Новости</h2>
-        <ul class="news__list">
+        <ul class="news__list" aria-label="Список новостей">
           <li class="news__item">
             <a href="#" class="card-link news__item-link">
               <article class="news__article">
-                <img class="news__image" src="./images/programmer.jpg" alt="" />
+                <img
+                  class="news__image"
+                  src="./images/programmer.jpg"
+                  alt="Специалист НПП «ПИОНЕР» за разработкой проекта"
+                />
                 <div class="news__content">
                   <p class="news__text">
                     НПП «ПИОНЕР» подтвердило свои компетенции в области
@@ -762,7 +855,11 @@
           <li class="news__item">
             <a href="#" class="card-link news__item-link">
               <article class="news__article">
-                <img class="news__image" src="./images/drill.jpg" alt="" />
+                <img
+                  class="news__image"
+                  src="./images/drill.jpg"
+                  alt="Производственный процесс сверления металла"
+                />
                 <div class="news__content">
                   <p class="news__text">
                     Поздравляем коллектив регионального представительства
@@ -782,7 +879,11 @@
           <li class="news__item">
             <a href="#" class="card-link news__item-link">
               <article class="news__article">
-                <img class="news__image" src="./images/turner.jpg" alt="" />
+                <img
+                  class="news__image"
+                  src="./images/turner.jpg"
+                  alt="Производственный процесс токарной обработки"
+                />
                 <div class="news__content">
                   <p class="news__text">
                     Перенос сроков проведения запланированных работ в 2020 году
@@ -800,9 +901,12 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" aria-label="Футер сайта">
       <div class="footer__container">
-        <a href="#" class="footer__logo logo-action"
+        <a
+          href="#"
+          class="footer__logo logo-action"
+          aria-label="Логотип компании Пионер"
           ><svg
             width="180"
             height="38"
@@ -819,7 +923,7 @@
         ></a>
         <button class="button footer__nav-button">Навигация</button>
         <nav class="footer__nav">
-          <ul class="footer__nav-list">
+          <ul class="footer__nav-list" aria-label="Список навигации часть 1">
             <li class="footer__nav-item">
               <a class="nav-link" href="#">Главная</a>
             </li>
@@ -838,7 +942,7 @@
             </li>
           </ul>
 
-          <ul class="footer__nav-list">
+          <ul class="footer__nav-list" aria-label="Список навигации часть 2">
             <li class="footer__nav-item">
               <a class="nav-link" href="#">Поддержка</a>
             </li>
@@ -850,7 +954,7 @@
             </li>
           </ul>
 
-          <ul class="footer__nav-list">
+          <ul class="footer__nav-list" aria-label="Список навигации часть 3">
             <li class="footer__nav-item">
               <a class="nav-link" href="#">Файлы</a>
             </li>
@@ -863,7 +967,9 @@
           </ul>
         </nav>
       </div>
-      <span class="footer__copyright">1994 — 2020 ООО «ПИОНЕР»</span>
+      <span class="footer__copyright" aria-label="Спонсорство и партнерство"
+        >1994 — 2020 ООО «ПИОНЕР»</span
+      >
     </footer>
   </body>
 </html>
